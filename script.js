@@ -1,4 +1,7 @@
-function vente(stringTitre, stringresumer, image,numberPrix) {
+var vente = function() {
+
+
+    this.crea = function(stringTitre, stringresumer, image,numberPrix){
 
 
     this.resumer = stringresumer;
@@ -30,17 +33,17 @@ function vente(stringTitre, stringresumer, image,numberPrix) {
     prix.className ="prix";
     prix.innerHTML = this.prix+"€";
     mainwidows.appendChild(prix);
-
 }
+};
 
 var resumer1 = "une carte graphique e la marque MSI";
 var resumer2 = "une carte graphique de la marque EVGA";
 var resumer3 = " une carte graphique de la marque ASUS";
-var vente1 = new vente("MSI GTX 980 TI",resumer1,"https://media.ldlc.com/r1600/ld/products/00/03/11/04/LD0003110479_2.jpg",200);
-var vente2 = new vente("EVGA GTX 980 TI",resumer2,"https://media.ldlc.com/ld/products/00/03/13/59/LD0003135984_2.jpg",199);
-var vente3 = new vente("MSI RTX 2080 TI",resumer3,"https://www.vortez.net/articles_thumb/31166_asus%20strix%20gtx%20980ti%20dc3%20oc%20review%20-%20intro%201.jpg",189);
-
-
-
+var vente1 = new vente;
+var vente2 = new vente;
+var vente3 = new vente;
+vente1.crea("MSI GTX 980 TI",resumer1,"https://media.ldlc.com/r1600/ld/products/00/03/11/04/LD0003110479_2.jpg",200);
+vente2.crea("EVGA GTX 980 TI",resumer2,"https://media.ldlc.com/ld/products/00/03/13/59/LD0003135984_2.jpg",199);
+vente3.crea("MSI RTX 2080 TI",resumer3,"https://www.vortez.net/articles_thumb/31166_asus%20strix%20gtx%20980ti%20dc3%20oc%20review%20-%20intro%201.jpg",189);
 
 
