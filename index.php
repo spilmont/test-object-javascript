@@ -1,3 +1,24 @@
+<?php
+
+$serverName = "localhost";
+$userName = "root";
+$password = "";
+$dbname = "cliient_lefauxsite";
+
+$conn = new mysqli($serverName,$userName,$password);
+
+if($conn->connect_error){
+    die("connted failed : ".$conn->connect_error);
+}else{
+    $conn->select_db($dbname);
+    echo "cc";
+}
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -80,5 +80,12 @@ nav li{
 nav li:hover .submenu{
     display: block;
 }
+.formulaire{
+    margin-bottom: 2%;
+}
+
+#enregistrer{
+    margin-bottom: 3%;
+}
 
 
